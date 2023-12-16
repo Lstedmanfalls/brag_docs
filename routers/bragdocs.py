@@ -1,8 +1,10 @@
 from fastapi import APIRouter
+from services import get_service
 
 router = APIRouter()
 
 
-@router.get("/hi")
-def get_root():
-    return "hello I am a bragdocs endpoint"
+@router.get("/")
+def service():
+    new_service = get_service.GetService()
+    return (new_service.get_service())
