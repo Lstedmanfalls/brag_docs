@@ -10,4 +10,4 @@ Inital Setup:
 
 Run Docker Containers & Start Uvicorn Server:
 - `docker compose up`
-- Go to 127.0.0.1:8000/<path>
+- Go to 127.0.0.1:8000/{path}
